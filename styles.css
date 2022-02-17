@@ -12,6 +12,7 @@
   /* position: fixed; elemento no se ve afectado por el skroll, elemento padre con position relative */
   position: sticky;/*Tiene su posicion original pero se ve afectado por el skroll*/              
   top: 10px;
+  /* z-index: 1; PARA USAR LAS CAPAS */
 }
 
 .elemento-hijo {
