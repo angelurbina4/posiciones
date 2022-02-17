@@ -1,0 +1,20 @@
+.elemento-padre {
+  border: 1px solid rgb(0, 0, 0);
+  position: relative;
+}
+
+.elemento-principal {              
+  background-color: yellow;
+  padding: 10px;
+  /* position: relative; STATIC, NO PODEMOS UTILIZAR LEFT, RIGHT,BOTTOM,TOP */
+  /* position: relative; FUNCIONA ESTATICA PERO SE VE AFECTADA POR LEFT, RIGHT,BOTTOM,TOP, en base a su posicion original*/
+  /* position: absolute; posicion basada en elemento padre */
+  /* position: fixed; elemento no se ve afectado por el skroll, elemento padre con position relative */
+  position: sticky;/*Tiene su posicion original pero se ve afectado por el skroll*/              
+  top: 10px;
+}
+
+.elemento-hijo {
+  background-color: gray;
+  padding: 10px;
+}
